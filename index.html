@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <div id="input" class="centered">
+    <div class="image left">
+      <span>Left</span>
+      <canvas width="320" height="240"></canvas>
+      <button>Rotate</button>
+      <input type="file" />
+    </div>
+    <div class="image right">
+      <span>Right</span>
+      <canvas width="320" height="240"></canvas>
+      <button>Rotate</button>
+      <input type="file" />
+    </div>
+  </div>
+
+  <div id="anaglyph" class="centered">
+    <button class="generate">Generate Anaglyph</button>
+    <br/>
+    <input class="x" type="range" value="0" min="-100" max="100" step="1" />
+    <div class="wrap">
+      <div class="image filtered">
+        <canvas width="640" height="480"></canvas>
+      </div>
+      <input class="y" type="range" value="0" min="-100" max="100" step="1" />
+    </div>
+  </div>
+
+
+  <script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+
+  <script src="app.js" type="text/javascript"></script>
+
+</body>
+</html>
