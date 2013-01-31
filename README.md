@@ -4,4 +4,4 @@
 
 ## License
 
-[MIT](https://github.com/benelsen/anaglyph-maker/blob/master/LICENSE)
+[MIT](LICENSE)
