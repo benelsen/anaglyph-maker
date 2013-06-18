@@ -8,21 +8,33 @@
 
   <div id="input" class="centered">
     <div class="image left">
-      <span>Left</span>
       <canvas width="320" height="240"></canvas>
-      <button>Rotate</button>
-      <input type="file" />
+      <ul>
+        <li>
+          <a class="btn js-rotate">Rotate</a>
+        </li>
+        <li>
+          <a class="btn js-file">Select a file</a>
+        </li>
+      </ul>
+      <input class="left" type="file" hidden />
     </div>
     <div class="image right">
-      <span>Right</span>
       <canvas width="320" height="240"></canvas>
-      <button>Rotate</button>
-      <input type="file" />
+      <ul>
+        <li>
+          <a class="btn js-rotate">Rotate</a>
+        </li>
+        <li>
+          <a class="btn js-file">Select a file</a>
+        </li>
+      </ul>
+      <input class="right" type="file" hidden />
     </div>
   </div>
 
   <div id="anaglyph" class="centered">
-    <button class="generate">Generate Anaglyph</button>
+    <a class="btn generate">Generate Anaglyph</a>
     <br/>
     <input class="x" type="range" value="0" min="-100" max="100" step="1" />
     <div class="wrap">

@@ -1,13 +1,56 @@
 body {
-  background-color: rgb(44,44,44);
-  color: #fff;
+  background-color: rgb(247,247,247);
+  color: #000;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: rgb(0, 132, 255);
+}
+
+a:hover {
+  color: rgb(0, 50, 100);
+}
+
+button {
+  border: none;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+}
+
+.btn {
+  color: rgb(0, 132, 255);
+  background-color: rgba(247,247,247, 255);
+}
+
+.btn:hover {
+  color: rgb(0, 50, 100);
+}
+
+ul {
+  list-style: none;
+}
+
+.image ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+}
+
+.image li a {
+  padding: 10px;
+  display: block;
 }
 
 canvas {
   display: block;
   max-width: 100%;
   border: 1px solid rgb(160,160,160);
-  background-color: rgb(128,128,128);
+  background-color: rgb(170,170,170);
 }
 
 .centered {
@@ -23,8 +66,8 @@ canvas {
   max-width: 40%;
 }
 
-#anaglyph .wrap {
-
+#anaglyph {
+  margin-top: 10px;
 }
 
 #anaglyph .image {
@@ -41,14 +84,16 @@ canvas {
   clear: both;
 }
 
-input[type=range].x {
+.x {
   display: inline-block;
   width: 640px;
   height: 20px;
 }
 
-input[type=range].y {
+.y {
   -webkit-appearance: slider-vertical;
+  -moz-appearance: slider-vertical;
+  vertical-align: top;
   width: 20px;
   height: 480px;
 }
