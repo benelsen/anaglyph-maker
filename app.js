@@ -45,6 +45,11 @@ var filter = function filter(dx, dy) {
   var pixelLeft  = ctxLeft.getImageData(dxL, dyL, canvasLeft.width-dxMax, canvasLeft.height-dyMax);
   var pixelRight = ctxRight.getImageData(dxR, dyR, canvasRight.width-dxMax, canvasRight.height-dyMax);
 
+  if ( pixelLeft.width !== pixelRight.width || pixelLeft.height !== pixelRight.height ) {
+    window.alert('Images must have the exact same dimensions');
+    return false;
+  }
+
   canvasFiltered.width = pixelLeft.width;
   canvasFiltered.height = pixelLeft.height;
 
